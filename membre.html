@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Devenir Membre</title>
+    <link rel="stylesheet" href="membre.css"/>
+</head>
+<body>
+    <div class="progress-container">
+        <div class="progress-bar" id="progress-bar"></div>
+        <div class="progress-steps">
+            <div class="step active">1</div>
+            <div class="step">2</div>
+            <div class="step">3</div>
+            <div class="step">4</div>
+        </div>
+    </div>
+
+    <form id="multi-step-form">
+        <div class="form-step active">
+            <h2>Étape 1</h2>
+
+            <div><label for="NOM">NOM:</label>
+            <input type="text" name="NOM" id="NOM" placeholder="Ex
+: ZINSOUWI" size="25" maxlength="15" autofocus required  /></div> <br>
+
+<div><label for="prenoms" class="prenoms">Prenoms :</label>
+            <input type="text" name="prenoms" id="prenoms" placeholder="Ex
+: johanes nelcaen" size="25" maxlength="15" required  /> </div><br>
+
+<div><label for="pseudo" class="pseudo">Pseudo :</label>
+            <input type="text" name="pseudo" id="pseudo" placeholder="Ex
+:  nelcaen" size="25" maxlength="15" required  /> </div><br>
+
+        <button type="button" onclick="moveStep(1)">Suivant</button>
+        </div>
+
+        <div class="form-step">
+            <h2>Étape 2</h2>
+
+            <div> <label for="date">Date de naissance<span class="obligatoire">*</span> :</label>
+            <input type="date" name="date" id="date" size="30" maxlength="10" required  /> </div><br>
+
+            <div><label for="nationnalite" class="nationnalite">Nationnalité:</label>
+            <input type="text" name="nationnalite" id="nationnalite" placeholder="Ex
+:  " size="25" maxlength="15" required  /> </div><br>
+
+<div><label for="adresse" class="adresse">Adresse :</label>
+<input type="text" name="adresse" id="adresse" placeholder="Ex
+:  " size="25" maxlength="15" required  /></div> <br>
+
+<button type="button" onclick="moveStep(-1)">Précédent</button>
+            <button type="button" onclick="moveStep(1)">Suivant</button>
+        </div>
+
+        <div class="form-step">
+            <h2>Étape 3</h2>
+            <div> <label for="tel" class="tel">Tel :</label>
+<input type="tel" name="tel" id="tel" placeholder="Ex
+:  " size="25" maxlength="15" required  /></div> <br>
+
+<div><label for="email" class="email">Email :</label>
+<input type="email" name="email" id="email" placeholder="Ex
+:  " size="25" maxlength="15" required  /></div> <br>
+
+<div><label for="photo" class="photo">photo :</label>
+<input type="file" name="photo" id="photo" placeholder="Ex
+:  " size="25" maxlength="15" required  /> </div><br>
+
+            <button type="button" onclick="moveStep(-1)">Précédent</button>
+            <button type="button" onclick="moveStep(1)">Suivant</button>
+        </div>
+
+        <div class="form-step">
+            <h2>Étape 4</h2>
+            <div> <label for="profession" class="profession">Profession :</label>
+            <input type="text" name="profession" id="profession" placeholder="Ex
+            :  " size="25" maxlength="15" required  /></div> <br>
+            
+           <div> <strong>Situations Matrimoniale </strong> : <br>
+<input type="checkbox" name="Celibataire" id="Celibataire" /> <label
+for="Celibataire">Célibataire sans enfant</label> <br>
+<input type="checkbox" name="Celibataire" id="Celibataire" />
+<label for="Celibataire">Célibataire avec enfant</label><br>
+<input type="checkbox" name="marie" id="marie" /> <label
+for="marie">marié(e)</label> </div><br>
+
+<div><label for="motif">Motif d'adhésion:</label>
+</br>
+<textarea name="motif" id="motif" rows="4"
+cols="30"required  >
+</textarea></div>
+            <button type="button" onclick="moveStep(-1)">Précédent</button>
+            <button type="submit">Soumettre</button>
+        </div>
+    </form>
+
+    <script src="membre.js"></script>
+</body>
+</html>
+    

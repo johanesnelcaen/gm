@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100vh;
+    margin: 0;
+}
+
+.progress-container {
+    position: relative;
+    width: 50%;
+    margin: 0px ;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 5);
+    padding: 40px;
+    border-radius:1O0px;
+}
+
+.progress-bar {
+    position: absolute;
+    height: 5px;
+    background: #4caf50;
+    width: 0%;
+    transition: width 0.3s;
+    
+}
+
+.progress-steps {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    z-index: 1;
+}
+
+.step {
+    width: 30px;
+    height: 30px;
+    background: #ddd;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 14px;
+    font-weight: bold;
+    color: #fff;
+    transition: background-color 0.3s;
+}
+
+.step.active, .step.completed {
+    background: #4caf50;
+}
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    box-shadow: 1px 1px 5px rgba(0, 0, 0, 5);
+    padding: 3Opx;
+
+}
+
+.form-step  {
+display: none;
+}
+.form-step h2  {
+margin: 0 auto;
+text-align: center;
+margin: 10px;
+color: #4caf50; }
+
+.form-step.active {
+    display: block;
+}
+
+button{
+    float: right;
+    padding: 5px;
+    margin: 5px;
+}
+
+label
+{
+font-family: "Arial Black", Arial, Verdana, sans-serif;
+margin-left: 20px;
+}input
+{
+border-radius: 100px rgb(123, 255, 0) outset;
+}
+
+input[type="text"],input[type="tel"],
+input[type="email"],
+input[type="date"],
+select {
+    width: 30%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 00px;
+    margin-left: 60px;
+}
+textarea {
+    width: 35%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 00px;
+    margin-left: 60px;
+}
+input[type="file"] {
+    width: 30% ;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+    margin-top: 00px;
+    margin-left: 60px;
+}
+
+

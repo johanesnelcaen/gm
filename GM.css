@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto condensed", sans-serif;
+}
+.top_home{
+	background-color:gold;
+	color: white;
+	font-weight: bold;
+	display:flex;
+	padding: 10px;
+}
+
+button{
+	background-color: black;
+	color: white;
+	font-weight: bold;
+}
+.social-icons {
+	display: flex;
+	justify-content: center;
+	margin-top: 0px;
+	margin-left: 70%;
+}
+.nav-menu{
+	color: #fff;
+}
+.social-icons a {
+	text-decoration: none;
+	margin: 0 10px;
+	color: #555;
+	font-size: 20px;
+}
+.social-icons a:hover {
+	color: #000;
+}
+
+nav{
+	background-color: black;
+	 display: flex;
+	 flex-wrap: wrap;
+	 height: 100px;
+}
+nav img{
+	margin-left: 50px;
+	margin-top: px;
+	border-radius: 100%;
+}
+nav ul{
+	list-style-type: none;
+	display: flex;
+	justify-content: flex-end;
+}
+nav ul li{
+	list-style: none;
+	margin: 40px;
+}
+nav ul li a{
+	color: white;
+	text-decoration: none;
+	font-size: 1.2rem;
+	transition: color 0.3s;
+	letter-spacing: 1px;
+}
+nav ul li a:hover{
+	color:gold;
+}
+.bienvenue img{
+	background-size: cover;
+	margin: 0 auto;
+	z-index: -100;
+}
+#typed-output{
+	color:#14213D ;
+	text-align: center;
+	font-size: large;
+	font-weight: bold;
+}
+.titre{
+	color: red;
+	text-decoration: none;
+	font-size: 3.2rem;
+	align-items: center;
+	text-align: center;
+	letter-spacing: 1px;
+	font-weight: bold;
+	margin: 30px;
+}
+.text{
+	max-width: 85%;
+	background-color: white ;
+	border-radius: 5px;
+	box-shadow: 1px 1px 5px rgba(0, 0, 0, 5);
+	text-justify: auto;
+	margin: 0 auto;
+	padding: 1px;
+}
+
+.text p{
+	font-size: 1.2rem;
+	line-height: 1.5;
+	letter-spacing: 1px;
+	margin-bottom: 1rem;
+	margin: 90px;
+}
+
+h1,p{
+	text-align: center;
+}
+
+footer{
+	background-color: black;
+	display:flex;
+	color: white;
+	justify-content:space-between;
+	padding: 10px ;
+	text-decoration: none;
+}
+.mem{
+	max-width: 900px;
+	margin: 10px auto;
+	padding: 30px;
+	border-radius: 10px;
+	box-shadow: 1px 1px 3px rgba(0, 0, 0.3);
+}
+.mem::after{
+
+display: block;
+clear: both;
+}
+.mem h3{
+	margin-bottom: 1Opx;
+}
+.mem p{
+	line-height: 1.4;
+}
+.mem img{
+	width: 200px;
+	height: 200px;
+	object-fit: cover;
+	border-radius: 100%;
+	float: left;
+	shape-outside: margin-box;
+	margin: 0 20px 5px 0;
+}
+#voirPlusBtn {
+	/* Styles pour le bouton */
+	padding: 10px;
+	background-color: #007BFF;
+	color: #fff;
+	border: none;
+	border-radius: 5px;
+	cursor: pointer;
+	margin-left: 150px;
+  }
+
+  #voir-plus {
+	/* Styles pour le contenu supplémentaire */
+	margin-top: 10px;
+  }
+.memplus{
+	display: inline-block;
+	text-decoration: none;
+	font-size: 1.25rem;
+	border: 1px solid #2eb0f0;
+	color: #2eb0f0;
+	padding: 10px 20px;
+	margin-left: 10px;
+	
+}
+
+.card {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 18rem;
+    text-align: center;
+	margin:20px;
+	
+}
+
+
+.card img {
+    width: 200PX;
+    height: 200px;
+	margin: 0 auto;
+	border-radius: 50%;
+}
+
+.contenu {
+    padding: 16px;
+}
+
+.contenu h2 {
+    margin: 0 0 10px;
+}
+
+.contenu p {
+    color: #666;
+    font-size: 14px;
+    margin: 0 0 20px;
+}
+
+.bouton {
+    background: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 4px;
+}
+
+.bouton:hover {
+    background: #2eb0f0;
+}
+
+#typed-output {
+	font-size: 24px;
+	font-family: Arial, sans-serif;
+ }
+
+ .hidden , .titre {
+    opacity: 0;
+    transition: opacity 1s ease-out;
+}
+
+.visible {
+    opacity: 1;
+}
+
+.card-wrapper{
+	display: flex;
+}
+.slide-content{
+max-width: 90%;
+margin: 0 auto;
+}
+
+@media all and (max-width: 768px)
+{
+	.top_home{
+		padding: 7px; }
+	.lefthome{
+		display: flex;
+	}	
+	.social-icons {
+		margin-left: 60%;
+
+}
+nav img{
+	margin-left: 30px;
+	width: 80px;
+	height: 80px;
+	margin-top: 10px;
+ }
+ nav ul li{
+	 margin: 10px;
+	margin-top: 40px; }
+	.card{
+		flex: 0 0 30%
+	}
+ 
+ }
+
+ 
+ @media all and (max-width: 425px) {
+ .lefthome , .lefthome button{
+	font-size: 0.9rem;
+}	
+.social-icons {
+	margin-left: 38%;
+}
+nav img{
+width: 70px;
+height: 70px;
+margin-left: 185px;
+margin-top: 0px;
+}
+
+
+nav ul li{
+	margin: 8px;
+   margin-top: 3px;
+   margin-left:0px;
+   
+ }
+ nav ul li a{
+	font-size: 1rem;
+	transition: color 0.3s;
+	letter-spacing: 0.7px;
+}
+
+   
+  
+
+.card{
+	flex: 0 0 50%;
+	margin: 30px;
+	padding: 100px;
+}
+.titre{ font-size: 2.5rem;}
+.text p{ font-size: 1rem;
+margin: 25px;}
+.mem img{
+	width: 150px;
+	height: 150px; }
+	#voirPlusBtn {
+		margin-left: 100px };
+		.bas img {width: 70px;
+		height: 70px;}
+	.menu-item, .item{ font-size: 10px;}
+	
+	  } 
+
+
+ @media all and (max-width: 375px) {
+	.lefthome , .lefthome button{
+	   font-size: 0.9rem;
+   }	
+   .social-icons {
+	   margin-left: 27%;
+   }
+   nav img{
+   width: 60px;
+   height: 60px;
+   margin-left: 160px;
+   }
+   nav ul li{
+	margin: 6px;
+	margin-left: 1px;
+    }
+   
+   nav ul li a{
+	font-size: 0.9rem;
+	letter-spacing: 0.5px;
+}
+   
+   .card{
+	   flex: 0 0 80%;
+	   margin: 70px;
+   }
+   .titre{ font-size: 2.3rem;}
+   .text p{ font-size: 1rem;
+   margin: 25px;}
+   .mem img{
+	   width: 120px;
+	   height: 120px; }
+	   #voirPlusBtn {
+		   margin-left: 10px };
+		   .bas img {width: 50px;
+		   height: 50px;}
+	   .menu-item, .item{ font-size: 10px;}
+	   .text p audio {width: 90%;}
+	   .bas img {
+		display: none;
+	}
+	   
+	}
+
+
+ @media all and (max-width: 320px) {
+	.lefthome , .lefthome button{
+	   font-size: 0.8rem;
+   }	
+   .social-icons {
+	   margin-left: 20%;
+   }
+   nav img{
+   width: 55px;
+   height: 55px;
+   margin-left: 145px;
+   }
+   
+   .card{
+	   flex: 0 0 80%;
+	   margin: 60px;
+   }
+   .titre{ font-size: 2.rem;}
+   .text p{ font-size: 1rem;
+   margin: 10px;}
+   .mem img{
+	   width: 100px;
+	   height: 100px; }
+	   #voirPlusBtn {
+		   margin-left: 30px };
+		   .bas img {width: 30px;
+		   height: 30px;}
+	   .menu-item, .item{ font-size: 9px;}
+	   .text p audio {width: 70%;}
+	   nav ul li{
+		margin: 5px;
+		margin-left: 0px;
+		}
+	   
+	   nav ul li a{
+		font-size: 0.8rem;
+		letter-spacing: 0.3px;
+	}
+	.bas img {
+		display: none;
+	}
+	   
+	}
+   
+ .swiper {
+  width: 100%;
+  padding: 20px 0;
+}
+
+.swiper-slide {
+  background: #eee;
+  border-radius: 10px;
+  padding: 10px;
+  text-align: center;
+}
+
+
